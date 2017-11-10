@@ -160,6 +160,7 @@ public class StepDefRegistration {
     @And("^user clicks on the Register button$")
     public void user_clicks_on_the_register_button(){
         driver.findElement(By.id("submitAccount")).click();
+        driver.findElement(By.xpath("//div[3]/div/div/ol/li")).isDisplayed();
     }
     @Then("^user account created successfully$")
     public void user_account_created_successfully()  {
